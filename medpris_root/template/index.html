@@ -10,13 +10,13 @@
     var ctx = document.getElementById('myChart').getContext('2d');
     var chart = new Chart(ctx, {
         // The type of chart we want to create
-        type: 'bar',
+        type: 'line',
 
         // The data for our dataset
         data: {
-            labels: {{varA|safe}},
+            labels: {{list_datostr|safe}},
             datasets: [{
-                label: 'My First dataset',
+                label: 'Pris contalgin 10 mg',
                 backgroundColor: 'rgb(255, 99, 132)',
                 borderColor: 'rgb(255, 99, 132)',
                 data: {{pris|safe}}
